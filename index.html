@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.ico" type="/images/favicon.ico">
+    <title>O A Sushi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="home">
+<!-- Start Nav -->
+    <nav class="navbar navbar-expand-lg nav fixed-top">
+        <div class="container">
+            <a class="navbar-logo" href="index.html">O A Sushi</a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/about.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/contact.html">Contact</a>
+                    </li>
+                </ul>
+                <div class="cart-container" onclick="cartPage()">
+                    <i class="fa-solid fa-cart-shopping cart-icon"></i>
+                    <div class="cart-counter"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+<!-- End Nav -->
+
+<div class="cart-page" style=" right: -100%;">
+    <h4 id="cart-title">Dein Einkaufswagen ist leer</h4>
+</div>
+
+<!-- Start Video Background -->
+    <div class="video-container position-relative top-0">
+        <video autoplay muted loop>
+            <source src="videos/sushi-promo-video.mp4" type="video/mp4">
+        </video>
+        <div class="video-content position-absolute top-0">
+            <p class="container video-text"></p>
+        </div>
+    </div>
+<!-- End Video Background -->
+
+
+<!-- Start Cards  -->
+    <div class="album py-5">
+        <div class="container col-12">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="images/card-img-1.jpg" alt="card-img-1">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="images/card-img-2.jpg" alt="card-img-1">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="images/card-img-3.jpg" alt="card-img-1">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="images/card-img-4.jpg" alt="card-img-1">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="images/card-img-5.jpg" alt="card-img-1">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="images/card-img-6.jpg" alt="card-img-1">
+                    </div>
+                </div>
+            </div>   
+        </div> 
+    </div>
+<!-- End Cards  -->
+
+
+<!-- Start Delivery Section -->
+<div class="container row py-5 px-0 mx-auto d-flex justify-content-center align-items-center">
+    <div class="col-6 px-0 delivery-container">
+        <h2 class="mb-5">Kostenlose Lieferung</h2>
+        <p>
+            Bei uns ist Ihre Zufriedenheit unser oberstes Ziel, und deshalb möchten wir sicherstellen, dass Sie unser köstliches
+            Sushi ganz bequem von zu Hause aus genießen können. Aus diesem Grund bieten wir Ihnen eine kostenlose Lieferung an,
+            damit Sie sich keine Gedanken über Abholungen oder zusätzliche Lieferkosten machen müssen.
+        </p>
+        <p>
+            Egal, ob Sie einen gemütlichen Abend zu Hause verbringen, Freunde einladen oder einfach keine Zeit haben, das Haus zu
+            verlassen - wir bringen Ihnen unser frisches und qualitativ hochwertiges Sushi direkt vor Ihre Haustür. Unser
+            Lieferdienst ist schnell, zuverlässig und sorgt dafür, dass Ihre Bestellung in kürzester Zeit bei Ihnen ankommt.
+        </p>
+        <p>
+            Unser Team kümmert sich nicht nur um die Zubereitung Ihrer Lieblings-Sushi-Kreationen, sondern auch um die sorgfältige
+            Verpackung, um sicherzustellen, dass alles frisch und geschmackvoll bleibt, während es den Weg zu Ihnen nach Hause
+            findet. Wir verwenden spezielle Behälter, die die Sushi-Rollen und -Stücke vor Beschädigungen schützen und
+            sicherstellen, dass sie ihre Frische und Präsentation bewahren.
+        </p>
+        <p>
+            Um von unserer kostenlosen Lieferung zu profitieren, ist es ganz einfach. Sie können entweder telefonisch bestellen und
+            uns Ihre Wünsche mitteilen, oder bequem über unsere Online-Bestellplattform navigieren. Wählen Sie aus unserer
+            umfangreichen Speisekarte die gewünschten Sushi-Kreationen, fügen Sie eventuell Beilagen oder Getränke hinzu und geben
+            Sie Ihre Lieferadresse an.
+        </p>
+    </div>
+    <div class="col-6 px-0 delivery-img-container">
+        <img class="delivery-img" src="images/delivery-img.png" alt="delivery-img">
+    </div>
+</div>
+<!-- End Delivery Section -->
+
+<!-- Start Footer -->
+<footer class="footer mt-auto py-3">
+    <div class="container d-flex justify-content-between align-items-center flex-wrap footer-container">
+        <a class="navbar-logo-footer" href="index.html">O A Sushi</a>
+        <div class="address">
+            <ul class="m-0 p-0 text-center">
+                <h4>Adresse</h4>
+                <li>Max-Mustermann-straße 5</li>
+                <li>84655 Marl</li>
+                <li>Phone: 01484546586</li>
+            </ul>
+        </div>
+        <div class="opening-hours">
+        <ul class="m-0 p-0 text-center">
+            <h4>Öffnungszeiten</h4>
+            <li>Dinstag - Sonntag</li>
+            <li>11:00 - 22:00</li>
+        </ul>
+        </div>
+        <div class="social-icons-footer">
+            <a class="ms-3" href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+            <a class="ms-3" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+            <a class="ms-3" href="https://twitter.com/?lang=de" target="_blank"><i class="fa-brands fa-square-twitter fa-2xl"></i></a>
+        </div>
+    </div>
+</footer>
+<!-- End Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

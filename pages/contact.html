@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/favicon.ico" type="/images/favicon.ico">
+    <title>OA Sushi | Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<!-- Start Nav -->
+    <nav class="navbar navbar-expand-lg nav fixed-top nav-color">
+        <div class="container">
+            <a class="navbar-logo" href="../index.html">O A Sushi</a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="about.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <div class="cart-container" onclick="cartPage()">
+                    <i class="fa-solid fa-cart-shopping cart-icon"></i>
+                    <div class="cart-counter"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+<!-- End Nav -->
+
+<div class="cart-page" style=" right: -100%;">
+    <h4 id="cart-title">Dein Einkaufswagen ist leer</h4>
+</div>
+
+<!-- Start Contact -->
+<div class="container-lg col-10 p-5 mt-5 mx-auto form-container">
+    <h4 class="mb-5 text-center">Contact</h4>
+    <form  class="success" novalidate action="https://formspree.io/f/xzbqwaay" method="POST">
+        <div class="row g-3">
+            <div class="col-md-6">
+                <label for="firstName" class="form-label">Vorname</label>
+                <input type="text" class="form-control form-control-sm" id="firstName" name ="firstName" minlength="3" maxlength="15" required>
+                <div class="invalid-feedback">
+                    Vorname ist pflicht
+                </div>
+            </div>
+
+            <div class="col-md-6 ">
+                <label for="lastName" class="form-label">Nachname</label>
+                <input type="text" class="form-control form-control-sm" id="lastName" name="lastName" minlength="3" maxlength="15"  required>
+                <div class="invalid-feedback">
+                    Nachname ist pflicht
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control form-control-sm" id="email" placeholder="you@example.com" name="email"
+                maxlength="40" autocomplete="give-email" required>
+                <div class="invalid-feedback">
+                    Email ist pflicht
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <label for="address" class="form-label">Adresse</label>
+                <input type="text" class="form-control form-control-sm" id="address" placeholder="Max-Mustermann Straße. 56" name="address" minlength="5" maxlength="40" autocomplete="street-address" required>
+                <div class="invalid-feedback">
+                    Adresse ist pflicht
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <label for="address2" class="form-label">Adresse 2</label>
+                <input type="text" class="form-control form-control-sm" id="address2" placeholder="Etage:" name="address2" maxlength="9" required>
+                <div class="invalid-feedback">
+                    Adresse 2 ist pflicht
+                </div>
+            </div>
+
+            <div class="col-md-6 stadt">
+                <label for="state" class="form-label">Stadt</label>
+                <select class="form-select form-select-sm" id="state" name="state" required>
+                    <option value="" selected disabled>Stadt</option>
+                    <option value="Marl">Marl</option>
+                    <option value="Recklinghausen">Recklinghausen</option>
+                    <option value="Herne">Herne</option>
+                    <option value="Herten">Herten</option>
+                    <option value="Dorsten">Dorsten</option>
+                    <option value="Gelsenkirchen">Gelsenkirchen</option>
+                    <option value="Datteln">Datteln</option>
+                </select>
+                <div class="invalid-feedback">
+                    Stadt ist pflicht
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <label for="zip" class="form-label ">PLZ.</label>
+                <input type="number" class="form-control form-control-sm" id="zip" placeholder="45825" name="zipCode" maxlength="5" autocomplete="postal-code" required>
+                <div class="invalid-feedback">
+                    PLZ. ist pflicht
+                </div>
+            </div>
+
+            <div class="col-lg-12 form-floating mt-3">
+                <textarea class="w-100 form-control" id="contact" placeholder="Wie können wir Ihnen helfen ?" name="textarea" maxlength="500" required></textarea>
+                <label class="form-label ms-2" for="contact">Ihre Nachricht:</label>
+                <div class="invalid-feedback">
+                    Ihre Nachricht ist pflicht
+                </div>
+            </div>
+        </div>
+        <button class="w-20 btn btn-lg mt-4 d-block mx-auto" type="submit">Senden</button>
+    </form>
+</div>
+<!-- End Contact -->
+
+<!-- Start Footer -->
+    <footer class="footer mt-auto py-3 ">
+        <div class="container d-flex justify-content-between align-items-center flex-wrap footer-container">
+            <a class="navbar-logo-footer" href="../index.html">O A Sushi</a>
+            <div class="address">
+                <ul class="m-0 p-0 text-center">
+                    <h4>Adresse</h4>
+                    <li>Max-Mustermann-straße 5</li>
+                    <li>84655 Marl</li>
+                    <li>Phone: 01484546586</li>
+                </ul>
+            </div>
+            <div class="opening-hours">
+                <ul class="m-0 p-0 text-center">
+                    <h4>Öffnungszeiten</h4>
+                    <li>Dinstag - Sonntag</li>
+                    <li>11:00 - 22:00</li>
+                </ul>
+            </div>
+            <div class="social-icons-footer">
+                <a class="ms-3" href="https://www.facebook.com/" target="_blank"><i
+                        class="fa-brands fa-facebook fa-2xl"></i></a>
+                <a class="ms-3" href="https://www.instagram.com/" target="_blank"><i
+                        class="fa-brands fa-instagram fa-2xl"></i></a>
+                <a class="ms-3" href="https://twitter.com/?lang=de" target="_blank"><i
+                        class="fa-brands fa-square-twitter fa-2xl"></i></a>
+            </div>
+        </div>
+    </footer>
+<!-- End Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>   
+</body>
+</html>

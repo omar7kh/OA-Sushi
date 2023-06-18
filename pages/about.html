@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/favicon.ico" type="/images/favicon.ico">
+    <title>OA Sushi | About Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+<!-- Start Nav -->
+    <nav class="navbar navbar-expand-lg nav fixed-top nav-color">
+        <div class="container">
+            <a class="navbar-logo" href="../index.html">O A Sushi</a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="about.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active " aria-current="page" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <div class="cart-container" onclick="cartPage()">
+                    <i class="fa-solid fa-cart-shopping cart-icon"></i>
+                    <div class="cart-counter"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+<!-- End Nav -->
+
+<div class="cart-page" style=" right: -100%;">
+    <h4 id="cart-title">Dein Einkaufswagen ist leer</h4>
+</div>
+
+<!-- Start About us Page -->
+    <div class="container about-container px-0 pb-5 my-5 m-auto d-flex justify-content-center align-items-center flex-wrap"
+        id="about-us">
+        <div class="about-text col-6 px-2 py-5">
+            <h2 class="mb-5">About Us</h2>
+            <p>
+                Willkommen im "O-A Sushi Restaurant", wo die Kunst des Sushis zum Leben erwacht! Unser Restaurant befindet
+                sich im
+                Herzen der Stadt und ist ein Paradies für Sushi-Liebhaber, die eine exquisite kulinarische Erfahrung suchen.
+                Wir sind
+                leidenschaftlich darin, die feinsten Sushi-Kreationen zu kreieren und bieten eine harmonische Mischung aus
+                traditionellen Techniken und innovativen Geschmacksrichtungen, die die Geschmacksknospen kitzeln.
+            </p>
+            <p>
+                Im Sakura Sushi Restaurant sind wir der Überzeugung, dass Sushi mehr ist als nur eine Mahlzeit; es ist ein
+                Ausdruck der
+                Kunst. Unser Team erfahrener Sushi-Köche ist stolz auf ihre Handwerkskunst und bereitet jedes Stück
+                sorgfältig und mit
+                Liebe zum Detail zu. Mit jedem Schnitt des Messers und jeder filigranen Rolle streben sie danach, essbare
+                Meisterwerke
+                zu schaffen, die nicht nur den Gaumen erfreuen, sondern auch die Augen begeistern.
+            </p>
+
+            <p>
+                Unsere Speisekarte bietet eine umfangreiche Auswahl an Sushi-Köstlichkeiten, von klassischen Favoriten bis
+                hin zu
+                einzigartigen und einfallsreichen Kreationen. Egal, ob Sie ein Sushi-Kenner oder ein Erstbesucher sind, bei
+                uns ist für
+                jeden Geschmack etwas dabei. Wir beziehen nur die frischesten und hochwertigsten Zutaten, um
+                sicherzustellen, dass jede
+                Mahlzeit ein unvergessliches Erlebnis wird.
+            </p>
+        </div>
+        <div class="row col-6 px-2 py-5 img-container">
+            <img src="../images/about-1.jpg" class="col-1 pe-2 py-0" alt="about-img">
+            <img src="../images/about-2.jpg" class="col-1 ps-2 py-0" alt="about-img">
+        </div>
+
+    </div>
+<!-- End About us Page -->
+    
+<!-- Start Footer -->
+    <footer class="footer mt-auto py-3">
+        <div class="container d-flex justify-content-between align-items-center flex-wrap footer-container">
+            <a class="navbar-logo-footer" href="../index.html">O A Sushi</a>
+            <div class="address">
+                <ul class="m-0 p-0 text-center">
+                    <h4>Adresse</h4>
+                    <li>Max-Mustermann-straße 5</li>
+                    <li>84655 Marl</li>
+                    <li>Phone: 01484546586</li>
+                </ul>
+            </div>
+            <div class="opening-hours">
+                <ul class="m-0 p-0 text-center">
+                    <h4>Öffnungszeiten</h4>
+                    <li>Dinstag - Sonntag</li>
+                    <li>11:00 - 22:00</li>
+                </ul>
+            </div>
+            <div class="social-icons-footer">
+                <a class="ms-3" href="https://www.facebook.com/" target="_blank"><i
+                        class="fa-brands fa-facebook fa-2xl"></i></a>
+                <a class="ms-3" href="https://www.instagram.com/" target="_blank"><i
+                        class="fa-brands fa-instagram fa-2xl"></i></a>
+                <a class="ms-3" href="https://twitter.com/?lang=de" target="_blank"><i
+                        class="fa-brands fa-square-twitter fa-2xl"></i></a>
+            </div>
+        </div>
+    </footer>
+<!-- End Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
