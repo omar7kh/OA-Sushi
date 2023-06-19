@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 :root{
@@ -183,15 +184,14 @@ background-color: var(--text-dark);
 }
 
 .video-content p{
-    font-size: 2.5rem;
     font-weight: bold;
     color: var(--yellow-color);
-    font-size: 5rem;
     letter-spacing: 3px;
     margin: auto;
 }
 
 .video-content p::after{
+    font-size: 3rem;
     content: '';
     animation: video-text 25s linear infinite;
 }
@@ -260,18 +260,20 @@ background-color: var(--text-dark);
     }
 /* End About Us Page */
 
+
+/* Start Album */
 .album img{
     height: 300px;
-    width: auto;
-}
-
-.album img {
+    width: 100%;
     object-fit: cover;
 }
+/* End Album */
+
 
 /* Start Delivery Section */
     .delivery-img-container .delivery-img{
         width: 100%;
+        height: 100%;
     }
 
     .delivery-container h2{
@@ -301,8 +303,9 @@ background-color: var(--text-dark);
         font-weight: bold;
     }
 
-    .menu-category h5{
+    .menu-category h3{
         font-weight: bold;
+        font-size: 1.3rem;
     }
 
     .menu-category p{
@@ -440,7 +443,7 @@ background-color: var(--text-dark);
     margin-right: 10px;
 }
 
-.cart-page h5 {
+.cart-page h4 {
     font-weight: bold;
 }
 
@@ -549,7 +552,7 @@ background-color: var(--text-dark);
     list-style: none;
 }
 
-.footer ul h4{
+.footer ul h2{
     font-size: 1rem;
 }
 
