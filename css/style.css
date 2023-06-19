@@ -291,7 +291,7 @@ background-color: var(--text-dark);
 
 /* Start Menu */
     .menu{
-        background-image: url('/images/sushi-bg.jpg');
+        background-image: url('../images/sushi-bg.jpg');
         background-size: cover;
         background-position: top;
         background-repeat: no-repeat;
