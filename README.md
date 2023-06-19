@@ -28,7 +28,7 @@ Um diese Website zu verwenden, öffnen Sie einfach die HTML-Datei in einem Webbr
 
 Wenn Sie zur Entwicklung dieser Website beitragen möchten, befolgen Sie diese Schritte:
 
-1. Klonen Sie das Repository: `git clone https://github.com/your-username/repository.git`
+1. Klonen Sie das Repository: `git clone https://github.com/omar7kh/OA-Sushi.git`
 
 2. Nehmen Sie Änderungen an den HTML- und CSS-Dateien entsprechend Ihren Anforderungen vor.
 
