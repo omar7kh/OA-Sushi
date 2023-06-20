@@ -19,6 +19,7 @@ Willkommen auf der Website des OA Sushi Restaurants! Diese Website präsentiert 
 - CSS: Die Website wird mit CSS gestaltet, um ihr visuelles Erscheinungsbild und Layout zu verbessern.
 
 - Bootstrap: Das Bootstrap-Framework wird verwendet, um die Reaktionsfähigkeit sicherzustellen und vorgestylte Komponenten bereitzustellen.
+- Javascript.
 
 ## Verwendung
 
